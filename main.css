@@ -11,3 +11,23 @@ body {
 h1,h2 {
     font-weight: 600;
 }
+
+hr {
+    border-color: #72519C;
+}
+
+#skills .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.skill_title{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.skill_description{
+    grid-column: 2;
+    grid-row: 1;
+}
