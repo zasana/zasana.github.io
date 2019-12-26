@@ -20,14 +20,13 @@ h2 {
     font-size: 32px;
 }
 
-p {
-    font-size: 20px;
-}
-
 hr {
     border-color: #72519C;
 }
 
+#summary p{
+    font-size: 20px;
+}
 #skills .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -39,11 +38,17 @@ hr {
     font-weight: 600;
     grid-column: 1;
     grid-row: 1;
+}
+
+#skills .description{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#skills {
     font-size: 20px;
 }
 
-#skill .description{
-    grid-column: 2;
-    grid-row: 1;
-    font-size: 20px;
+#version .p{ 
+    font-size: 12px;
 }
