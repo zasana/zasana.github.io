@@ -1,0 +1,21 @@
+#skills .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: minmax(16px,auto);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#skills .title{
+    font-weight: 600;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#skills .description{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#skills {
+    font-size: 20px;
+}

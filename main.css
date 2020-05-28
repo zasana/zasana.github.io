@@ -6,6 +6,8 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin-left: 48px;
     margin-right: 48px;
+
+    
 }
 
 h1 {
@@ -15,6 +17,10 @@ h1 {
     line-height: 45px;
 }
 
+p {
+    font-size: 20px;
+}
+
 hr {
     border-color: #FFE500;
 }
@@ -22,11 +28,13 @@ hr {
 .topnav { 
     /* background-color: #EFEFEF; */
     position: fixed;
-    width: calc(100% - 72px);
+    width: 100%;
     height: 72px;
-    left: 72px;
+    left: 0;
     top: 0;
     right: 0;
+
+    background-color: #222222;
 
     z-index: 9999;
 
@@ -51,13 +59,6 @@ hr {
 .topnav-right {
     float: right;
     
-}
-
-.detail-container{
-    left: 72px; 
-    top: 72px;
-    width: auto;
-    height: auto;
 }
 
 .primary{
@@ -122,29 +123,22 @@ hr {
     color: #EFEFEF;
 }
 
-#summary p{
-    font-size: 20px;
-}
-#skills .container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.overview{
+    position: relative;
+    top: 72px;
+    /* grid-template-columns: repeat(2, 1fr);
     grid-auto-columns: minmax(16px,auto);
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto); */
 }
 
-#skills .title{
-    font-weight: 600;
-    grid-column: 1;
-    grid-row: 1;
+.overview .info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-#skills .description{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#skills {
-    font-size: 20px;
+.info img{
+    width: 90%;
+    clip-path: circle(190px at center);
 }
 
 #version .p{ 
